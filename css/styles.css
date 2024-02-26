@@ -640,6 +640,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  min-width: 336px;
 }
 
 @media (min-width: 576px) {
@@ -667,6 +668,13 @@ progress {
     max-width: 1320px;
   }
 }
+@media (max-width: 400px) {
+  #cert-font {
+    font-size: 3rem;
+  }
+}
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -7724,7 +7732,8 @@ textarea.form-control-lg {
 }
 
 .p-5 {
-  padding: 3rem !important;
+  /* padding: 3rem !important; */
+  padding: 3rem;
 }
 
 .px-0 {
@@ -10918,4 +10927,13 @@ header.masthead .bg-circle-4 {
   header.masthead .masthead-content .masthead-subheading {
     font-size: 4rem;
   }
+}
+
+@media (min-width: 399px) {
+  .p-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 2rem;
+  }  
 }
